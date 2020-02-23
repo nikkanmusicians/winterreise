@@ -2,275 +2,195 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-  <title>❄ Winterreise Space ❄</title>
+  <!-- <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+  <link href="./index.css" rel="stylesheet">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <script src="./Sortable.min.js"></script>
+  <title>Der Winterreise</title>
 </head>
 <body>
-  <script type="text/javascript" src="./data/snowfall.jquery.min.js"></script>
+  <div class="H2">Displacement</div>
+  <div class="H1">Der Winterreise</div>
+  <div class="H11">You may rearrange the original text by Wilhelm Müller.</div>
+  <hr>
+  <!-- --------------------------------------------------------------------------- -->
+  <div class="split">
+    <!-- 👇左 -->
+    <div class="split-item split-left">
+  <div class="list">
+    <div class="item">Fremd</div>
+    <div class="item">bin</div>
+    <div class="item">ich</div>
+    <div class="item">eingezogen</div>
+    <div class="item">,</div>
+    <div class="filtered">　↩</div>
+    <div class="item">Fremd</div>
+    <div class="item">zieh'</div>
+    <div class="item">ich</div>
+    <div class="item">wieder</div>
+    <div class="item">aus</div>
+    <div class="item">,</div>
+    <div class="filtered">　↩</div>
+    <div class="item">Der</div>
+    <div class="item">Mai</div>
+    <div class="item">war</div>
+    <div class="item">mir</div>
+    <div class="item">gewogen</div>
+    <div class="filtered">　↩</div>
+    <div class="item">Mit</div>
+    <div class="item">manchem</div>
+    <div class="item">Blumenstrauß</div>
+    <div class="item">.</div>
+    <div class="filtered">　↩</div>
+    <div class="item">Das</div>
+    <div class="item">Mädchen</div>
+    <div class="item">sprach</div>
+    <div class="item">von</div>
+    <div class="item">Liebe</div>
+    <div class="item">,</div>
+    <div class="filtered">　↩</div>
+    <div class="item">Die</div>
+    <div class="item">Muttuer</div>
+    <div class="item">gar</div>
+    <div class="item">von</div>
+    <div class="item">Eh'</div>
+    <div class="item">.</div>
+    <div class="filtered">　↩</div>
+    <div class="item">Nun</div>
+    <div class="item">ist</div>
+    <div class="item">die</div>
+    <div class="item">Welt</div>
+    <div class="item">so</div>
+    <div class="item">trübe</div>
+    <div class="item">,</div>
+    <div class="filtered">　↩</div>
+    <div class="item">Der</div>
+    <div class="item">Weg</div>
+    <div class="item">gehüllt</div>
+    <div class="item">in</div>
+    <div class="item">Schnee</div>
+    <div class="item">.</div>
+    <div class="filtered">　↩</div>
+    <div class="filtered">　↩</div>
+    
+    <div class="item">Ich</div>
+    <div class="item">kann</div>
+    <div class="item">zu</div>
+    <div class="item">meiner</div>
+    <div class="item">Reisen</div>
+    <div class="filtered">　↩</div>
+    <div class="item">Nicht</div>
+    <div class="item">wählen</div>
+    <div class="item">mit</div>
+    <div class="item">der</div>
+    <div class="item">Zeit</div>
+    <div class="item">,</div>
+    <div class="filtered">　↩</div>
+    <div class="item">Muß</div>
+    <div class="item">selbst</div>
+    <div class="item">den</div>
+    <div class="item">Weg</div>
+    <div class="item">mir</div>
+    <div class="item">weisen</div>
+    <div class="filtered">　↩</div>
+    <div class="item">In</div>
+    <div class="item">dieser</div>
+    <div class="item">Dunkelheit</div>
+    <div class="item">.</div>
+    <div class="filtered">　↩</div>
+    <div class="item">Es</div>
+    <div class="item">zieht</div>
+    <div class="item">ein</div>
+    <div class="item">Mondenschatten</div>
+    <div class="filtered">　↩</div>
+    <div class="item">Als</div>
+    <div class="item">mein</div>
+    <div class="item">Gefährte</div>
+    <div class="item">mit</div>
+    <div class="item">,</div>
+    <div class="filtered">　↩</div>
+    <div class="item">Und</div>
+    <div class="item">auf</div>
+    <div class="item">den</div>
+    <div class="item">weißen</div>
+    <div class="item">Matten</div>
+    <div class="filtered">　↩</div>
+    <div class="item">Such'</div>
+    <div class="item">ich</div>
+    <div class="item">des</div>
+    <div class="item">Wildes</div>
+    <div class="item">Tritt</div>
+    <div class="item">.</div>
+    <div class="filtered">　↩</div>
+
+  </div>
   <script type="text/javascript">
-  jQuery(document).snowfall({
-    flakeCount : 50,			// 要素の数
-    flakeColor : '#FFF',		// 要素の色
-    flakeIndex : 999999,		// 要素のz-index
-    minSize : 5,				// 要素の最小サイズ
-    maxSize : 15,				// 要素の最大サイズ
-    minSpeed : 1,				// 要素の最小落下スピード
-    maxSpeed : 5,				// 要素の最大落下スピード
-    round : true,				// 要素に丸みを持たせる？
-    shadow : false				// 要素に影をつける？
-    //collection : 'div'		// 要素を指定の要素に積もらせる設定(画像を設定してもflakeColorで指定した要素の色が積もります)
-    //image : './image.png'		// 要素を指定の画像に変更
-  });
+    $(function() {
+      Sortable.create($('.list')[0], {
+        group: 'shared',
+        filter: '.filtered1',
+        animation: 150  // ミリ秒で指定
+    });
+    });
   </script>
-<style>
-  body {
-    margin: 10px auto;
-    width: 100%;
-    background: url("./data/vertical3.gif"); 
-    color: #231F20;
-    font-family: 'Sigmar One', cursive, "Tsukushi A Round Gothic", 筑紫A丸ゴシック, YuGothic, "Yu Gothic", 游ゴシック, sans-serif;
-  }
-  h1{
-  padding: 10px;
-  font-weight: bold;
-  font-size: 200%;
-  text-align: center;
-  }
-  h4{
-  /* padding-top: 30%; */
-  margin-top: 300px;
-  padding: 10px;
-  font-size: 200%;
-  text-align: center;
-  /* padding: 5px; */
-  }
-  .container{
-    margin: 0 auto;
-    width: 90%;
-    height: 50%
-  }
-  .list{
-    float: center;
-    margin-left: 2.5%;
-    width: 100%;
-  }
-  .list li {
-    float: left;
-    /* margin-left: 15px; */
-    margin-bottom: 5px;
-    margin-right: 3px;
-    margin-left: 3px;
-    padding: 15px;
-    width: 250px;
-    height: 50px;
-    border: 1px solid rgb(255, 255, 255);
-    background-color: whitesmoke;
-    font-size: 24px;
-    text-align: center;
-    list-style: none;
-  }
-  .list li:hover {
-    cursor: move;
-  }
-  .Tlist {
-    float: center;
-    margin-left: 2.5%;
-    width: 100%;
-  }
-  .Tlist li {
-    float: left;
-    font-size: 20px;
-    padding: 15px;
-    margin-bottom: 5px;
-    margin-right: 3px;
-    margin-left: 3px;
-    background-color: black;
-    border: 1px solid #231f20;
-    color: #231F20;
-    width: 250px; height: 50px;
-    text-align: center;
-    list-style: none;
-  }
-  .logo {
-  font-family: "Tsukushi A Round Gothic", 筑紫A丸ゴシック, YuGothic, "Yu Gothic", 游ゴシック, sans-serif;
-  padding: 0px;
-  font-weight: bold;
-  font-size: 180%;
-  text-align:center; }
-  @media screen and (max-width: 480px) {
-    #logo {
-      display: inline-block;
-      padding: 0px 0px 20px;
-      text-align: center;
-    }
-  }
-  .logo .logoimg {
-    /* display: block; */
-    width: 48%;
-    margin: 3%;
-    fill: black; }
-    @media screen and (max-width: 480px) {
-      .logo .logoimg {
-        display: inline-block;
-        width: 100%;
-        margin: auto; 
-        padding: 0px 0px 0px;} }
-  .img {
-    /* display: block; */
-    width: 30%;
-    height: auto;
-    padding-top: 10px;
-    fill: black; }
-</style>
-<h1>
-  <!-- ❄ Winterreise Space ❄ -->
-  <img src="./data/logo.svg" class="logoimg"><br>
-  <img src="./data/13.gif"class="img">
-</h1><p>
-<div class="container">
-<div class="lists_wrap">
-<ul class="list" id="list1">
-  <li class="list">fremd</li>
-  <li class="list">ist</li>
-  <li class="list">sie</li>
-  <li class="list">eingezogen</li>
-  <li class="list">,</li>
-  <li class="list">nun</li>
-  <li class="list">steht</li>
-  <li class="list">vor</li>
-  <li class="list">meinem</li>
-  <li class="list">haus</li>
-  <li class="list">,</li>
-  <li class="list">der</li>
-  <li class="list">mai</li>
-  <li class="list">ist</li>
-  <li class="list">mir</li>
-  <li class="list">gewogen</li>
-  <li class="list">mit</li>
-  <li class="list">manchem</li>
-  <li class="list">blumenstrauß</li>
-  <li class="list">.</li>
-</ul>
-</div>
-</div>
-<!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
-<!-- <h4>👇 -------------- TRASH -------------- 👇</h4> -->
-<div class="container">
-<ul class="Tlist" id="trash1">
-  <li class="Tlist">.</li>
-  <li class="Tlist">.</li>
-  <li class="Tlist">,</li>
-  <li class="Tlist">,</li>
-  <li class="Tlist">:</li>
-  <li class="Tlist">;</li>
-  <li class="Tlist">(</li>
-  <li class="Tlist">)</li>
+    </div>
+    <!-- 👇右 -->
+    <div class="split-item split-right">
+    <div class="split-right__inner">
+    <div class="H11W"><br><br><br>You can use these.</div>
+    <div class="4copy">
+      <div class="item">.</div>
+      <div class="item">,</div>
+      <div class="item">!</div>
+      <div class="item">?</div>
+      <div class="item">-</div>
+      <div class="item">:</div>
+      <div class="item">;</div>
+      <div class="item">(</div>
+      <div class="item">)</div>
+      <div class="item">[</div>
+      <div class="item">]</div>
+      <div class="item">‘</div>
+      <div class="item">’</div>
+      <div class="item">“</div>
+      <div class="item">”</div>
+      <br><br>
+      <div class="filtered">　↩</div>
+      <br>
+    </div>
+          <script type="text/javascript">
+          $(function(){
+            Sortable.create($('.4copy')[0], {
+            group: {
+              name: 'shared',
+              pull: 'clone',
+              put: false // Do not allow items to be put into this list
+            },
+            animation: 150,
+            sort: false // To disable sorting: set sort to false
+            });
+          })
+          </script>
+    <!-- 👇ゴミ箱 -->
+    <div class="H11W">Here is the trash.</div>
+    <div class="trash">
+      <div class="filtered0">Welcome to trash. Please arrange them here.</div>
+          <script type="text/javascript">
+            $(function(){
+              Sortable.create($('.trash')[0], {
+              group: {
+                name: 'shared'
+              },
+              animation: 150,
+              filter: '.filtered0',
+              sort: false // To disable sorting: set sort to false
+              });
+            })
+            </script>
+    </div>
+    </div></div>
 
-</ul>
-
-</div>
-<div class="container">
-  <ul class="list" id="list2">
-    <li class="list">das</li>
-    <li class="list">mädchen</li>
-    <li class="list">spicht</li>
-    <li class="list">von</li>
-    <li class="list">liebe</li>
-    <li class="list">,</li>
-    <li class="list">die</li>
-    <li class="list">mutter</li>
-    <li class="list">gar</li>
-    <li class="list">von</li>
-    <li class="list">eh</li>
-    <li class="list">'</li>
-    <li class="list">.</li>
-    <li class="list">fremd</li>
-    <li class="list">ist</li>
-    <li class="list">die</li>
-    <li class="list">welt</li>
-    <li class="list">so</li>
-    <li class="list">trübe</li>
-    <li class="list">,</li>
-    <li class="list">der</li>
-    <li class="list">weg</li>
-    <li class="list">gehüllt</li>
-    <li class="list">in</li>
-    <li class="list">schnee</li>
-    <li class="list">.</li>
-  </ul>
   </div>
-<div class="container">
-    <ul class="Tlist" id="trash2">
-      <li class="Tlist">,</li>
-      <li class="Tlist">.</li>
-      <li class="Tlist">[</li>
-      <li class="Tlist">]</li>
-      <li class="Tlist">(</li>
-      <li class="Tlist">)</li>
-      <li class="Tlist">‘</li>
-      <li class="Tlist">’</li>
-      <li class="Tlist">“</li>
-      <li class="Tlist">”</li>
-
-  </p>    
-  </ul>
-  </div>
-<h1><p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-</h1></p>
-<script src="./js/jquery-3.3.1.min.js"></script>
-<script src="./js/Sortable/Sortable.min.js"></script>
-<!-- <script src="./js/sor_ser.js"></script> -->
-<script>
-  // $(function(){
-  //   Sortable.create(listWithHandle, {
-  //     animation: 150,
-  //   });
-  // });
-  $(function(){
-    Sortable.create(list1, {
-      sort: 1,
-      group: {
-        name: 'common_lists',
-        pull: 'clone', // コピー
-        pull: true,    // 移動
-        put: true
-      },
-      animation: 150
-    });
-    Sortable.create(trash1, {
-      sort: 1,
-      group: {
-        name: 'common_lists',
-        pull: true,
-        put: true
-      },
-      animation: 150
-    });
-    Sortable.create(list2, {
-      sort: 1,
-      group: {
-        name: 'common_lists',
-        pull: true,
-        put: true
-      },
-      animation: 150
-    });
-    Sortable.create(trash2, {
-      sort: 1,
-      group: {
-        name: 'common_lists',
-        pull: true,
-        put: true
-      },
-      animation: 150
-    });
-  });
-  // var sortableLinks = $("list1", "list2");
-  // $(sortableLinks).sortable();
-  // var linkOrderData = $(sortableLinks).sortable('serialize');
-
-
-</script>
 </body>
 </html>
