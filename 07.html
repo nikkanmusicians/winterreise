@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+  <link href="./index.css" rel="stylesheet">
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <script src="./Sortable.min.js"></script>
+  <title>Der Winterreise</title>
+</head>
+<body>
+  <div class="H2">Displacement</div>
+  <div class="H1">Der Winterreise</div>
+  <div class="H11">You may rearrange the original text by Wilhelm Müller.</div>
+  <hr>
+  <!-- --------------------------------------------------------------------------- -->
+  <div class="split">
+    <!-- 👇左 -->
+    <div class="split-item split-left">
+  <div class="list">
+    <div class="item">Lustig</div>
+    <div class="item">in</div>
+    <div class="item">die</div>
+    <div class="item">Welt</div>
+    <div class="item">hinein</div>
+    <div class="filtered">　↩</div>
+    
+    <div class="item">Gegen</div>
+    <div class="item">Wind</div>
+    <div class="item">und</div>
+    <div class="item">Wetter</div>
+    <div class="item">;</div>
+    <div class="filtered">　↩</div>
+
+    <div class="item">Will</div>
+    <div class="item">kein</div>
+    <div class="item">Gott</div>
+    <div class="item">auf</div>
+    <div class="item">Erden</div>
+    <div class="item">sein</div>
+    <div class="item">,</div>
+    <div class="filtered">　↩</div>
+
+    <div class="item">Sind</div>
+    <div class="item">wir</div>
+    <div class="item">selber</div>
+    <div class="item">Götter</div>
+    <div class="item">!</div>
+    <div class="filtered">　↩</div>
+
+  </div>
+  <script type="text/javascript">
+    $(function() {
+      Sortable.create($('.list')[0], {
+        group: 'shared',
+        filter: '.filtered1',
+        animation: 150  // ミリ秒で指定
+    });
+    });
+  </script>
+    </div>
+    <!-- 👇右 -->
+    <div class="split-item split-right">
+    <div class="split-right__inner">
+    <div class="H11W"><br><br><br>You may add these symbols:</div>
+    <div class="4copy">
+      <div class="item">.</div>
+      <div class="item">,</div>
+      <div class="item">!</div>
+      <div class="item">?</div>
+      <div class="item">-</div>
+      <div class="item">:</div>
+      <div class="item">;</div>
+      <div class="item">(</div>
+      <div class="item">)</div>
+      <div class="item">[</div>
+      <div class="item">]</div>
+      <div class="item">‘</div>
+      <div class="item">’</div>
+      <div class="item">“</div>
+      <div class="item">”</div>
+      <br><br>
+      <div class="filtered">　↩</div>
+      <br>
+    </div>
+          <script type="text/javascript">
+          $(function(){
+            Sortable.create($('.4copy')[0], {
+            group: {
+              name: 'shared',
+              pull: 'clone',
+              put: false // Do not allow items to be put into this list
+            },
+            animation: 150,
+            sort: false // To disable sorting: set sort to false
+            });
+          })
+          </script>
+    <!-- 👇ゴミ箱 -->
+    <div class="H11W">You can trash anything here:</div>
+    <div class="trash">
+      <div class="filtered0">[ Welcome to the trash. ]</div>
+          <script type="text/javascript">
+            $(function(){
+              Sortable.create($('.trash')[0], {
+              group: {
+                name: 'shared'
+              },
+              animation: 150,
+              filter: '.filtered0',
+              sort: false // To disable sorting: set sort to false
+              });
+            })
+            </script>
+    </div>
+    </div></div>
+
+  </div>
+</body>
+</html>
