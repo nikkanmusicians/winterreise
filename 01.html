@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+  <link href="./index.css" rel="stylesheet">
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <script src="./Sortable.min.js"></script>
+  <title>Der Winterreise</title>
+</head>
+<body>
+  <div class="H2">Displacement</div>
+  <div class="H1">Der Winterreise</div>
+  <div class="H11">You may rearrange the original text by Wilhelm Müller.</div>
+  <hr>
+  <!-- --------------------------------------------------------------------------- -->
+  <div class="split">
+    <!-- 👇左 -->
+    <div class="split-item split-left">
+  <div class="list">
+    <div class="item">Fremd</div>
+    <div class="item">ist</div>
+    <div class="item">sie</div>
+    <div class="item">eingezogen</div>
+    <div class="item">,</div>
+    <div class="filtered">　↩</div>
+    <div class="item">Steht</div>
+    <div class="item">nun</div>
+    <div class="item">vor</div>
+    <div class="item">meinem</div>
+    <div class="item">Haus</div>
+    <div class="item">,</div>
+    <div class="filtered">　↩</div>
+    <div class="item">Der</div>
+    <div class="item">Mai</div>
+    <div class="item">ist</div>
+    <div class="item">mir</div>
+    <div class="item">gewogen</div>
+    <div class="filtered">　↩</div>
+    <div class="item">Mit</div>
+    <div class="item">manchem</div>
+    <div class="item">Blumenstrauß</div>
+    <div class="item">.</div>
+    <div class="filtered">　↩</div>
+
+    <div class="item">Das</div>
+    <div class="item">Mädchen</div>
+    <div class="item">spicht</div>
+    <div class="item">von</div>
+    <div class="item">Liebe</div>
+    <div class="item">,</div>
+    <div class="filtered">　↩</div>
+    <div class="item">Die</div>
+    <div class="item">Mutter</div>
+    <div class="item">gar</div>
+    <div class="item">von</div>
+    <div class="item">Eh'</div>
+    <div class="item">.</div>
+    <div class="filtered">　↩</div>
+    <div class="item">Nun</div>
+    <div class="item">ist</div>
+    <div class="item">die</div>
+    <div class="item">Welt</div>
+    <div class="item">so</div>
+    <div class="item">stille</div>
+    <div class="item">,</div>
+    <div class="filtered">　↩</div>
+    <div class="item">Der</div>
+    <div class="item">Weg</div>
+    <div class="item">gehüllt</div>
+    <div class="item">in</div>
+    <div class="item">Schnee</div>
+    <div class="item">.</div>
+    <div class="filtered">　↩</div>
+    <div class="filtered">　↩</div>
+<!--     
+    <div class="item">Ich</div>
+    <div class="item">kann</div>
+    <div class="item">zu</div>
+    <div class="item">meiner</div>
+    <div class="item">Reisen</div>
+    <div class="filtered">　↩</div>
+    <div class="item">Nicht</div>
+    <div class="item">wählen</div>
+    <div class="item">mit</div>
+    <div class="item">der</div>
+    <div class="item">Zeit</div>
+    <div class="item">,</div>
+    <div class="filtered">　↩</div>
+    <div class="item">Muß</div>
+    <div class="item">selbst</div>
+    <div class="item">den</div>
+    <div class="item">Weg</div>
+    <div class="item">mir</div>
+    <div class="item">weisen</div>
+    <div class="filtered">　↩</div>
+    <div class="item">In</div>
+    <div class="item">dieser</div>
+    <div class="item">Dunkelheit</div>
+    <div class="item">.</div>
+    <div class="filtered">　↩</div>
+    <div class="item">Es</div>
+    <div class="item">zieht</div>
+    <div class="item">ein</div>
+    <div class="item">Mondenschatten</div>
+    <div class="filtered">　↩</div>
+    <div class="item">Als</div>
+    <div class="item">mein</div>
+    <div class="item">Gefährte</div>
+    <div class="item">mit</div>
+    <div class="item">,</div>
+    <div class="filtered">　↩</div>
+    <div class="item">Und</div>
+    <div class="item">auf</div>
+    <div class="item">den</div>
+    <div class="item">weißen</div>
+    <div class="item">Matten</div>
+    <div class="filtered">　↩</div>
+    <div class="item">Such'</div>
+    <div class="item">ich</div>
+    <div class="item">des</div>
+    <div class="item">Wildes</div>
+    <div class="item">Tritt</div>
+    <div class="item">.</div>
+    <div class="filtered">　↩</div> -->
+
+  </div>
+  <script type="text/javascript">
+    $(function() {
+      Sortable.create($('.list')[0], {
+        group: 'shared',
+        filter: '.filtered1',
+        animation: 150  // ミリ秒で指定
+    });
+    });
+  </script>
+    </div>
+    <!-- 👇右 -->
+    <div class="split-item split-right">
+    <div class="split-right__inner">
+    <div class="H11W"><br><br><br>You may add these symbols:</div>
+    <div class="4copy">
+      <div class="item">.</div>
+      <div class="item">,</div>
+      <div class="item">!</div>
+      <div class="item">?</div>
+      <div class="item">-</div>
+      <div class="item">:</div>
+      <div class="item">;</div>
+      <div class="item">(</div>
+      <div class="item">)</div>
+      <div class="item">[</div>
+      <div class="item">]</div>
+      <div class="item">‘</div>
+      <div class="item">’</div>
+      <div class="item">“</div>
+      <div class="item">”</div>
+      <br><br>
+      <div class="filtered">　↩</div>
+      <br>
+    </div>
+          <script type="text/javascript">
+          $(function(){
+            Sortable.create($('.4copy')[0], {
+            group: {
+              name: 'shared',
+              pull: 'clone',
+              put: false // Do not allow items to be put into this list
+            },
+            animation: 150,
+            sort: false // To disable sorting: set sort to false
+            });
+          })
+          </script>
+    <!-- 👇ゴミ箱 -->
+    <div class="H11W">You can trash anything here:</div>
+    <div class="trash">
+      <div class="filtered0">[ Welcome to the trash. ]</div>
+          <script type="text/javascript">
+            $(function(){
+              Sortable.create($('.trash')[0], {
+              group: {
+                name: 'shared'
+              },
+              animation: 150,
+              filter: '.filtered0',
+              sort: false // To disable sorting: set sort to false
+              });
+            })
+            </script>
+    </div>
+    </div></div>
+
+  </div>
+</body>
+</html>
